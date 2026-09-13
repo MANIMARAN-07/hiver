@@ -10,8 +10,8 @@ This repository contains an enterprise-grade, end-to-end AI Support Agent built 
 ---
 
 ## 📸 Premium Analytics Dashboard
-*(Screenshot Placeholder - Drag and drop your dashboard screenshot here!)*
-`![Dashboard Screenshot]()`
+<img width="959" height="410" alt="image" src="https://github.com/user-attachments/assets/398151fa-9fb9-4b93-94d2-907b0edef299" />
+
 
 Our custom-built Single Page Application (SPA) dashboard provides deep insights into Intent Distributions, System Health, and Live Escalation routing.
 
