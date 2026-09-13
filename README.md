@@ -1,4 +1,4 @@
-# 🛡️ Thunainirpaan (Sarathi) | AI Customer Support Engine
+# 🛡️Sarathi | AI Customer Support Engine
 **"Your intelligent support co-pilot. Routing with precision, escalating with empathy."**
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
