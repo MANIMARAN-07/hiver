@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarathi | Support Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Load Phosphor Icons for premium icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h1 class="logo-text">சாரதி</h1>
+                <div class="logo-sub">SAARATHI</div>
+                <p class="brand-desc"><b>துணைநிற்பான் (Thunainirpaan)</b><br>Your intelligent support co-pilot.<br>Routing with precision, escalating with empathy.</p>
+            </div>
+
+            <nav class="nav-menu" id="sidebarNav">
+                <a href="#overview" data-target="view-overview" class="nav-item active"><i class="ph ph-squares-four"></i> Overview</a>
+                <a href="#conversations" data-target="view-conversations" class="nav-item"><i class="ph ph-chat-circle-dots"></i> Conversations</a>
+                <a href="#intent" data-target="view-intent" class="nav-item"><i class="ph ph-chart-pie-slice"></i> Intent Analysis</a>
+                <a href="#retrieval" data-target="view-placeholder" class="nav-item"><i class="ph ph-magnifying-glass"></i> Retrieval Explorer</a>
+                <a href="#response" data-target="view-placeholder" class="nav-item"><i class="ph ph-pencil-simple"></i> Response Studio</a>
+                <a href="#escalations" data-target="view-placeholder" class="nav-item"><i class="ph ph-warning"></i> Escalations</a>
+                <a href="#evaluation" data-target="view-placeholder" class="nav-item"><i class="ph ph-check-circle"></i> Evaluation</a>
+                <a href="#failure" data-target="view-placeholder" class="nav-item"><i class="ph ph-flask"></i> Failure Analysis</a>
+                <a href="#datasets" data-target="view-placeholder" class="nav-item"><i class="ph ph-database"></i> Datasets</a>
+                <a href="#settings" data-target="view-settings" class="nav-item"><i class="ph ph-gear"></i> Settings</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="quote-box">
+                    <p>"Not every question needs an answer.<br>Some need a human."</p>
+                    <span class="quote-author">— Saarathi</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Dashboard -->
+        <main class="main-content">
+            <!-- View: Overview -->
+            <div id="view-overview" class="view-section active">
+                <!-- Header -->
+            <header class="topbar">
+                <div class="header-titles">
+                    <span class="eyebrow">HISTORICALLY GROUNDED • CONFIDENCE-AWARE • HUMAN-FIRST</span>
+                    <h2 class="page-title">DASHBOARD</h2>
+                    <h1 class="main-title">Customer Support, Handled with Judgment</h1>
+                    <p class="subtitle">Saarathi analyses, finds relevant past resolutions, drafts safe responses, and knows when to escalate to a human.</p>
+                </div>
+                <div class="header-actions">
+                    <div class="search-bar">
+                        <i class="ph ph-magnifying-glass"></i>
+                        <input type="text" placeholder="Search conversations, intents, or cases...">
+                        <span class="shortcut">⌘K</span>
+                    </div>
+                    <!-- Profile removed as requested -->
+                    <div class="date-picker" style="border-color: var(--green); color: var(--green); cursor: default;">
+                        <span class="dot-green" style="margin-right: 4px;"></span>
+                        <span>Live API Status: Online</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Metrics Cards -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <i class="ph ph-chat-teardrop"></i>
+                        <span>Total Conversations</span>
+                    </div>
+                    <div class="metric-body">
+                        <span class="metric-value">1,842</span>
+                        <span class="metric-trend up"><i class="ph ph-arrow-up"></i> 12%</span>
+                    </div>
+                    <div class="metric-footer">vs previous month</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <i class="ph ph-lightning"></i>
+                        <span>Auto-handled</span>
+                    </div>
+                    <div class="metric-body">
+                        <span class="metric-value">1,312</span>
+                        <span class="metric-trend up"><i class="ph ph-arrow-up"></i> 8%</span>
+                    </div>
+                    <div class="metric-footer">71.2%</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <i class="ph ph-users"></i>
+                        <span>Escalated to Human</span>
+                    </div>
+                    <div class="metric-body">
+                        <span class="metric-value">530</span>
+                        <span class="metric-trend down"><i class="ph ph-arrow-down"></i> 5%</span>
+                    </div>
+                    <div class="metric-footer">28.8%</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <i class="ph ph-target"></i>
+                        <span>Intent Accuracy</span>
+                    </div>
+                    <div class="metric-body">
+                        <span class="metric-value">87.4%</span>
+                        <span class="metric-trend up"><i class="ph ph-arrow-up"></i> 3.1%</span>
+                    </div>
+                    <div class="metric-footer">&nbsp;</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <i class="ph ph-shield-check"></i>
+                        <span>Response Safety</span>
+                    </div>
+                    <div class="metric-body">
+                        <span class="metric-value">99.1%</span>
+                        <span class="metric-trend up"><i class="ph ph-arrow-up"></i> 0.8%</span>
+                    </div>
+                    <div class="metric-footer">&nbsp;</div>
+                </div>
+            </div>
+
+            <!-- Main Table Section -->
+            <section class="table-section">
+                <div class="table-header">
+                    <div class="tabs">
+                        <button class="tab active">Recent Conversations</button>
+                        <button class="tab">Intent Breakdown</button>
+                        <button class="tab">Escalation Reasons</button>
+                        <button class="tab">System Performance</button>
+                    </div>
+                    <div class="table-actions">
+                        <div class="segmented-control">
+                            <button class="active">All</button>
+                            <button>Auto-handled</button>
+                            <button>Escalated</button>
+                        </div>
+                        <button class="btn-filter"><i class="ph ph-funnel"></i> Filter</button>
+                        <button class="btn-primary" id="openChatBtn"><i class="ph ph-plus"></i> New Conversation</button>
+                    </div>
+                </div>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>CUSTOMER MESSAGE</th>
+                            <th>PREDICTED INTENT</th>
+                            <th>CONFIDENCE</th>
+                            <th>DECISION</th>
+                            <th>RESPONSE</th>
+                            <th>TIME</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Hardcoded mock rows matching the image exactly -->
+                        <tr>
+                            <td>001</td>
+                            <td class="msg-col">Where is my order? It's been 10 days.</td>
+                            <td><span class="tag tag-blue">Delivery Issue</span></td>
+                            <td>
+                                <div class="conf-bar"><span class="val">0.92</span><div class="bar"><div class="fill" style="width: 92%"></div></div></div>
+                            </td>
+                            <td><span class="badge badge-green">Auto-handled</span></td>
+                            <td class="resp-col">I understand your concern. Based on ...</td>
+                            <td class="time-col">2m ago</td>
+                            <td><i class="ph ph-dots-three"></i></td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td class="msg-col">I was charged twice for the same item.</td>
+                            <td><span class="tag tag-red">Payment Issue</span></td>
+                            <td>
+                                <div class="conf-bar"><span class="val">0.87</span><div class="bar"><div class="fill" style="width: 87%"></div></div></div>
+                            </td>
+                            <td><span class="badge badge-green">Auto-handled</span></td>
+                            <td class="resp-col">I see that duplicate charges can be ...</td>
+                            <td class="time-col">5m ago</td>
+                            <td><i class="ph ph-dots-three"></i></td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td class="msg-col">I want to cancel my order.</td>
+                            <td><span class="tag tag-purple">Cancellation</span></td>
+                            <td>
+                                <div class="conf-bar"><span class="val">0.78</span><div class="bar"><div class="fill" style="width: 78%"></div></div></div>
+                            </td>
+                            <td><span class="badge badge-green">Auto-handled</span></td>
+                            <td class="resp-col">You can cancel your order from ...</td>
+                            <td class="time-col">12m ago</td>
+                            <td><i class="ph ph-dots-three"></i></td>
+                        </tr>
+                        <tr>
+                            <td>004</td>
+                            <td class="msg-col">My account is locked. I can't login.</td>
+                            <td><span class="tag tag-orange">Account Issue</span></td>
+                            <td>
+                                <div class="conf-bar"><span class="val">0.61</span><div class="bar"><div class="fill warning" style="width: 61%"></div></div></div>
+                            </td>
+                            <td><span class="badge badge-red">Escalated</span></td>
+                            <td class="resp-col">This requires additional verification...</td>
+                            <td class="time-col">18m ago</td>
+                            <td><i class="ph ph-dots-three"></i></td>
+                        </tr>
+                        <tr>
+                            <td>005</td>
+                            <td class="msg-col">Will I get a refund for the returned item?</td>
+                            <td><span class="tag tag-green">Refund</span></td>
+                            <td>
+                                <div class="conf-bar"><span class="val">0.83</span><div class="bar"><div class="fill" style="width: 83%"></div></div></div>
+                            </td>
+                            <td><span class="badge badge-green">Auto-handled</span></td>
+                            <td class="resp-col">Refunds are usually processed within ...</td>
+                            <td class="time-col">21m ago</td>
+                            <td><i class="ph ph-dots-three"></i></td>
+                        </tr>
+                        <tr>
+                            <td>006</td>
+                            <td class="msg-col">I received a damaged product.</td>
+                            <td><span class="tag tag-blue">Product Issue</span></td>
+                            <td>
+                                <div class="conf-bar"><span class="val">0.76</span><div class="bar"><div class="fill" style="width: 76%"></div></div></div>
+                            </td>
+                            <td><span class="badge badge-red">Escalated</span></td>
+                            <td class="resp-col">I'm escalating this to our support tea...</td>
+                            <td class="time-col">28m ago</td>
+                            <td><i class="ph ph-dots-three"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Bottom Widgets Grid -->
+            <div class="widgets-grid">
+                <div class="widget">
+                    <h3>Intent Distribution</h3>
+                    <div class="widget-body intent-dist">
+                        <div class="donut-chart">
+                            <svg viewBox="0 0 100 100" class="donut">
+                                <circle class="donut-ring" cx="50" cy="50" r="40"></circle>
+                                <circle class="donut-segment s1" cx="50" cy="50" r="40" stroke-dasharray="24 76" stroke-dashoffset="25"></circle>
+                                <circle class="donut-segment s2" cx="50" cy="50" r="40" stroke-dasharray="18 82" stroke-dashoffset="1"></circle>
+                                <circle class="donut-segment s3" cx="50" cy="50" r="40" stroke-dasharray="12 88" stroke-dashoffset="-17"></circle>
+                                <circle class="donut-segment s4" cx="50" cy="50" r="40" stroke-dasharray="11 89" stroke-dashoffset="-29"></circle>
+                                <circle class="donut-segment s5" cx="50" cy="50" r="40" stroke-dasharray="10 90" stroke-dashoffset="-40"></circle>
+                                <circle class="donut-segment s6" cx="50" cy="50" r="40" stroke-dasharray="9 91" stroke-dashoffset="-50"></circle>
+                                <circle class="donut-segment s7" cx="50" cy="50" r="40" stroke-dasharray="16 84" stroke-dashoffset="-59"></circle>
+                            </svg>
+                            <div class="donut-center">
+                                <span class="val">1,842</span>
+                                <span class="lbl">conversations</span>
+                            </div>
+                        </div>
+                        <div class="legend">
+                            <div class="leg-item"><span class="dot c1"></span> Delivery Issue <span class="pct">24%</span></div>
+                            <div class="leg-item"><span class="dot c2"></span> Payment Issue <span class="pct">18%</span></div>
+                            <div class="leg-item"><span class="dot c3"></span> Cancellation <span class="pct">12%</span></div>
+                            <div class="leg-item"><span class="dot c4"></span> Account Issue <span class="pct">11%</span></div>
+                            <div class="leg-item"><span class="dot c5"></span> Refund <span class="pct">10%</span></div>
+                            <div class="leg-item"><span class="dot c6"></span> Product Issue <span class="pct">9%</span></div>
+                            <div class="leg-item"><span class="dot c7"></span> Others <span class="pct">16%</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <h3>Escalation Reasons</h3>
+                    <div class="widget-body esc-reasons">
+                        <div class="bar-row">
+                            <span class="lbl">Low Confidence</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 38%"></div></div>
+                            <span class="pct">38%</span>
+                        </div>
+                        <div class="bar-row">
+                            <span class="lbl">Insufficient Evidence</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 26%"></div></div>
+                            <span class="pct">26%</span>
+                        </div>
+                        <div class="bar-row">
+                            <span class="lbl">Policy Sensitive</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 14%"></div></div>
+                            <span class="pct">14%</span>
+                        </div>
+                        <div class="bar-row">
+                            <span class="lbl">Ambiguous Intent</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 12%"></div></div>
+                            <span class="pct">12%</span>
+                        </div>
+                        <div class="bar-row">
+                            <span class="lbl">Contradictory Evidence</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 7%"></div></div>
+                            <span class="pct">7%</span>
+                        </div>
+                        <div class="bar-row">
+                            <span class="lbl">Other</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 3%"></div></div>
+                            <span class="pct">3%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <h3>System Health</h3>
+                    <div class="widget-body health-widget">
+                        <div class="health-header">
+                            <div class="icon-circle"><i class="ph ph-check"></i></div>
+                            <div>
+                                <h4>All systems operational</h4>
+                                <p>Last updated 2 minutes ago</p>
+                            </div>
+                        </div>
+                        <div class="health-grid">
+                            <div class="health-item">
+                                <span class="lbl">API</span>
+                                <span class="status"><span class="dot-green"></span> Healthy</span>
+                            </div>
+                            <div class="health-item">
+                                <span class="lbl">Vector DB</span>
+                                <span class="status"><span class="dot-green"></span> Healthy</span>
+                            </div>
+                            <div class="health-item">
+                                <span class="lbl">LLM Service</span>
+                                <span class="status"><span class="dot-green"></span> Healthy</span>
+                            </div>
+                            <div class="health-item">
+                                <span class="lbl">Classifier</span>
+                                <span class="status"><span class="dot-green"></span> Healthy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div> <!-- End View: Overview -->
+
+            <!-- View: Conversations (Example Full Page) -->
+            <div id="view-conversations" class="view-section" style="display: none; height: 100%;">
+                <div style="display: flex; flex-direction: column; height: 100%; align-items: center; justify-content: center; text-align: center; color: var(--text-muted);">
+                    <i class="ph ph-chat-circle-dots" style="font-size: 48px; margin-bottom: 16px; color: var(--brand-dark);"></i>
+                    <h2 style="font-family: 'Playfair Display', serif; font-size: 28px; color: var(--brand-dark); margin-bottom: 8px;">All Conversations</h2>
+                    <p style="font-size: 14px; max-width: 400px; margin-bottom: 24px;">Explore historical logs and review escalation cases in detail. This module is currently under active development.</p>
+                    <button class="btn-primary" onclick="document.getElementById('openChatBtn').click();" style="margin: 0 auto;">
+                        <i class="ph ph-plus"></i> Start Live Test Instead
+                    </button>
+                </div>
+            </div>
+
+            <!-- View: Intent Analysis (Mock Page) -->
+            <div id="view-intent" class="view-section" style="display: none; height: 100%;">
+                <header class="topbar">
+                    <div class="header-titles">
+                        <span class="eyebrow">MODULE: CLASSIFICATION</span>
+                        <h2 class="page-title">Intent Analysis</h2>
+                        <p class="subtitle">Deep dive into semantic clustering and model confusion matrices.</p>
+                    </div>
+                </header>
+                <div class="metrics-grid">
+                    <div class="widget" style="grid-column: span 3;">
+                        <h3>Top Confused Intents (Confidence < 0.70)</h3>
+                        <table class="data-table">
+                            <tr><th>Predicted Intent</th><th>Actual (Human Label)</th><th>Frequency</th></tr>
+                            <tr><td><span class="tag tag-blue">Delivery Issue</span></td><td><span class="tag tag-purple">Cancellation</span></td><td>42 cases</td></tr>
+                            <tr><td><span class="tag tag-orange">Account Issue</span></td><td><span class="tag tag-red">Payment Issue</span></td><td>28 cases</td></tr>
+                            <tr><td><span class="tag tag-green">Refund</span></td><td><span class="tag tag-blue">Product Issue</span></td><td>15 cases</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View: Settings (Mock Page) -->
+            <div id="view-settings" class="view-section" style="display: none; height: 100%;">
+                <header class="topbar">
+                    <div class="header-titles">
+                        <span class="eyebrow">SYSTEM CONFIGURATION</span>
+                        <h2 class="page-title">Settings</h2>
+                        <p class="subtitle">Tune the Saarathi engine parameters and escalation thresholds.</p>
+                    </div>
+                </header>
+                <div class="widget" style="max-width: 600px;">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px;">LLM Engine</label>
+                        <select style="width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 6px;">
+                            <option>Mock (Heuristic Mode)</option>
+                            <option>OpenAI gpt-4o-mini</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px;">Confidence Threshold for Escalation</label>
+                        <input type="range" min="0" max="1" step="0.05" value="0.75" style="width: 100%;">
+                        <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Current: 0.75 (75%)</div>
+                    </div>
+                    <button class="btn-primary" style="width: 100%; justify-content: center;">Save Configuration</button>
+                </div>
+            </div>
+
+            <!-- View: Placeholder for others -->
+            <div id="view-placeholder" class="view-section" style="display: none; height: 100%;">
+                <div style="display: flex; flex-direction: column; height: 100%; align-items: center; justify-content: center; text-align: center; color: var(--text-muted);">
+                    <i class="ph ph-wrench" style="font-size: 48px; margin-bottom: 16px; color: var(--brand-dark);"></i>
+                    <h2 style="font-family: 'Playfair Display', serif; font-size: 28px; color: var(--brand-dark); margin-bottom: 8px;" id="placeholder-title">Module Settings</h2>
+                    <p style="font-size: 14px; max-width: 400px;">This feature is currently being integrated with the Saarathi backend systems. Check back soon for updates.</p>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+
+    <!-- Live Chat Modal (Slide Over) -->
+    <div class="modal-overlay" id="chatOverlay"></div>
+    <div class="slide-over" id="chatSlideOver">
+        <div class="slide-header">
+            <h3>Test Conversation</h3>
+            <button class="close-btn" id="closeChatBtn"><i class="ph ph-x"></i></button>
+        </div>
+        
+        <div class="chat-container">
+            <div id="chat-history" class="chat-history">
+                <div class="system-msg">Live testing started. Type a message to test the pipeline.</div>
+            </div>
+            
+            <div class="insights-panel">
+                <div class="insights-grid">
+                    <div>
+                        <div class="label">INTENT</div>
+                        <div class="val" id="res-intent">--</div>
+                    </div>
+                    <div>
+                        <div class="label">CONFIDENCE</div>
+                        <div class="val" id="res-confidence-text">--</div>
+                    </div>
+                    <div>
+                        <div class="label">GROUNDING</div>
+                        <div class="val" id="res-grounded">--</div>
+                    </div>
+                    <div>
+                        <div class="label">DECISION</div>
+                        <div class="val" id="res-decision">--</div>
+                    </div>
+                </div>
+                <div class="reasoning" id="reason-box" style="display: none;">
+                    <strong>Escalation Reason:</strong> <span id="res-reason"></span>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="message-input" placeholder="E.g., Where is my order?" autocomplete="off">
+                <button id="send-btn"><i class="ph ph-paper-plane-right"></i> Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

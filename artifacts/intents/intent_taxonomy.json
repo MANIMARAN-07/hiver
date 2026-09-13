@@ -1,0 +1,87 @@
+[
+    {
+        "name": "Hardware Support",
+        "definition": "Issues related to physical hardware failure, screen damage, or device replacement.",
+        "inclusion_criteria": [
+            "screen",
+            "broken",
+            "cracked",
+            "battery",
+            "hardware",
+            "exploded"
+        ],
+        "exclusion_criteria": [
+            "app crash",
+            "software update"
+        ],
+        "examples": [
+            "my iPhone screen is frozen",
+            "my macbook exploded!"
+        ],
+        "ambiguous_examples": [
+            "phone won't turn on (could be software)"
+        ],
+        "estimated_frequency": 0.3,
+        "escalation_tendency": "High - often requires physical service or sensitive replacements."
+    },
+    {
+        "name": "Software & OS",
+        "definition": "Issues related to OS updates, app crashes, and software bugs.",
+        "inclusion_criteria": [
+            "iOS",
+            "update",
+            "crash",
+            "app",
+            "frozen app"
+        ],
+        "exclusion_criteria": [
+            "cracked screen"
+        ],
+        "examples": [
+            "iOS 11 update is draining my battery really fast."
+        ],
+        "ambiguous_examples": [
+            "battery dying fast (could be hardware degradation)"
+        ],
+        "estimated_frequency": 0.4,
+        "escalation_tendency": "Low - often solved by troubleshooting steps."
+    },
+    {
+        "name": "Account & Billing",
+        "definition": "Issues related to passwords, billing, subscriptions, and refunds.",
+        "inclusion_criteria": [
+            "password",
+            "billing",
+            "refund",
+            "subscription",
+            "charge"
+        ],
+        "exclusion_criteria": [],
+        "examples": [
+            "refund please",
+            "I was charged twice"
+        ],
+        "ambiguous_examples": [],
+        "estimated_frequency": 0.2,
+        "escalation_tendency": "Medium - requires account verification."
+    },
+    {
+        "name": "General Inquiry",
+        "definition": "Questions about products, store hours, or policies.",
+        "inclusion_criteria": [
+            "how to",
+            "where is",
+            "when does"
+        ],
+        "exclusion_criteria": [
+            "broken",
+            "refund"
+        ],
+        "examples": [
+            "how do I reset my watch?"
+        ],
+        "ambiguous_examples": [],
+        "estimated_frequency": 0.1,
+        "escalation_tendency": "Low"
+    }
+]

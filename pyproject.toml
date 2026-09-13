@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hiver-sde-intern-ai-support"
+version = "0.1.0"
+description = "Autonomous End-to-End AI Support Agent"
+authors = [
+    {name = "AI Engineering Agent"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas",
+    "scikit-learn",
+    "sentence-transformers",
+    "faiss-cpu",
+    "pyyaml",
+    "pydantic",
+    "openai",
+    "streamlit",
+    "datasets",
+    "matplotlib",
+    "seaborn"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "isort"
+]

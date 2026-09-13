@@ -1,0 +1,16 @@
+{
+    "total_rows": 211,
+    "total_unique_authors": 107,
+    "inbound_tweets": 106,
+    "outbound_tweets": 105,
+    "top_brands": {
+        "AmazonHelp": 41,
+        "AppleSupport": 33,
+        "SpotifyCares": 31
+    },
+    "missing_text": 0,
+    "date_range": {
+        "min": "2017-10-31 22:23:14",
+        "max": "2017-11-04 12:10:00"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "total_cases_evaluated": 10,
+    "auto_handle_rate": 0.2,
+    "escalation_rate": 0.8,
+    "grounded_rate": 1.0
+}

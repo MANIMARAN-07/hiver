@@ -1,0 +1,63 @@
+{
+    "baseline_trivial": {
+        "accuracy": 0.61,
+        "majority_class": "General Inquiry & Feedback"
+    },
+    "baseline_simple": {
+        "accuracy": 0.91
+    },
+    "main_model": {
+        "accuracy": 0.795,
+        "classification_report": {
+            "Account, Billing & Prime": {
+                "precision": 0.8666666666666667,
+                "recall": 0.65,
+                "f1-score": 0.7428571428571429,
+                "support": 20.0
+            },
+            "General Inquiry & Feedback": {
+                "precision": 0.8115942028985508,
+                "recall": 0.9180327868852459,
+                "f1-score": 0.8615384615384616,
+                "support": 122.0
+            },
+            "Non-English Support": {
+                "precision": 0.8235294117647058,
+                "recall": 0.8235294117647058,
+                "f1-score": 0.8235294117647058,
+                "support": 17.0
+            },
+            "Order Status & Logistics": {
+                "precision": 0.625,
+                "recall": 0.45454545454545453,
+                "f1-score": 0.5263157894736842,
+                "support": 22.0
+            },
+            "Product Quality & Hardware": {
+                "precision": 1.0,
+                "recall": 0.14285714285714285,
+                "f1-score": 0.25,
+                "support": 7.0
+            },
+            "Returns, Refunds & Cancellations": {
+                "precision": 0.6923076923076923,
+                "recall": 0.75,
+                "f1-score": 0.72,
+                "support": 12.0
+            },
+            "accuracy": 0.795,
+            "macro avg": {
+                "precision": 0.8031829956062694,
+                "recall": 0.6231607993420916,
+                "f1-score": 0.6540401342723324,
+                "support": 200.0
+            },
+            "weighted avg": {
+                "precision": 0.7970275919732441,
+                "recall": 0.795,
+                "f1-score": 0.7796689126662809,
+                "support": 200.0
+            }
+        }
+    }
+}

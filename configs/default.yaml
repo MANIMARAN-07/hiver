@@ -1,0 +1,25 @@
+dataset:
+  name: "gorkemsevinc/Customer_Support_on_Twitter"
+  raw_data_path: "data/raw/twcs.csv"
+  processed_data_dir: "data/processed"
+  
+brand:
+  selected_brand: "AmazonHelp" # Will be updated dynamically by selection script
+  
+modeling:
+  embedding_model: "all-MiniLM-L6-v2"
+  classifier: "logistic_regression"
+  calibration: "sigmoid"
+  retrieval_k: 5
+  
+generation:
+  model: "gpt-4o-mini"
+  temperature: 0.0
+
+evaluation:
+  judge_model: "gpt-4o-mini"
+  human_eval_size: 200
+
+paths:
+  artifacts: "artifacts"
+  reports: "reports"

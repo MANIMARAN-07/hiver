@@ -1,0 +1,12 @@
+{
+    "selected_brand": "AmazonHelp",
+    "reply_volume": 42944,
+    "alternatives_considered": {
+        "AmazonHelp": 42944,
+        "AppleSupport": 15694,
+        "Uber_Support": 10367,
+        "Delta": 7380,
+        "AmericanAir": 6593
+    },
+    "reasoning": "Selected AmazonHelp because it has the highest volume of outbound support replies (42944 replies in the subsample). This ensures maximum availability of multi-turn conversational cases (Problem -> Resolution) required to build the Golden Set and FAISS retrieval index."
+}
